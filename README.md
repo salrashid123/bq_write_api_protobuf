@@ -142,7 +142,6 @@ bq  query \
 --use_legacy_sql=false  "SELECT * 
 FROM $PROJECT_ID.$DATASET_ID.$TABLE_ID
 LIMIT 5;"
-```
 
 +------------+-----------+--------------+
 | first_name | last_name | middle_name  |
