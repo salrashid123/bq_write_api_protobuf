@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package echo;
+option go_package = "github.com/salrashid123/grpc_wireformat/grpc_services/src/echo";
+
+import "bq_table.proto";
+import "bq_field.proto";
+
+message EchoRequest {
+  option (gen_bq_schema.bigquery_opts).table_name = "echorequest";
+  string first_name = 1;
+  string last_name = 2;
+  Middle middle_name = 3;
+}
+
+message Middle {
+  string name = 1;
+}
+
+message EchoReply {
+  string message = 1;
+}
+

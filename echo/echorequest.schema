@@ -1,0 +1,24 @@
+[
+ {
+  "name": "first_name",
+  "type": "STRING",
+  "mode": "NULLABLE"
+ },
+ {
+  "name": "last_name",
+  "type": "STRING",
+  "mode": "NULLABLE"
+ },
+ {
+  "name": "middle_name",
+  "type": "RECORD",
+  "mode": "NULLABLE",
+  "fields": [
+   {
+    "name": "name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+   }
+  ]
+ }
+]
