@@ -43,6 +43,7 @@ We will first use the protoc plugin [protoc-gen-bq-schema](https://github.com/Go
 so first install the plutgin (you'll ofcourse need `golang` and `protoc` setup on your system)
 
 ```bash
+cd bq_write_api_protobuf/
 go install github.com/GoogleCloudPlatform/protoc-gen-bq-schema@latest
 git clone https://github.com/GoogleCloudPlatform/protoc-gen-bq-schema.git
 ```
