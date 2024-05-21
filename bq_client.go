@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"log"
 
-	storage "cloud.google.com/go/bigquery/storage/apiv1beta2"
+	storage "cloud.google.com/go/bigquery/storage/apiv1"
+	storagepb "cloud.google.com/go/bigquery/storage/apiv1/storagepb"
 	"cloud.google.com/go/bigquery/storage/managedwriter/adapt"
 	"github.com/salrashid123/grpc_wireformat/grpc_services/src/echo"
-	storagepb "google.golang.org/genproto/googleapis/cloud/bigquery/storage/v1beta2"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"
 )
